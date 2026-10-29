@@ -1,10 +1,13 @@
 /*
   PAWS FEEDER - Automatic Feeder
+  Arduino Uno, 16x2 I2C LCD, SG90 Servo, DS1302 RTC module, and 9V battery.
+
+  Have fun!
   ---------------------------------------------------
+  MECHANICS: 
   - Button 1 (D5): Set HOUR   -> 1 click = +1 hr, DOUBLE click = Confirm/Save
   - Button 2 (D6): Set MINUTE -> 1 click = +1 min, DOUBLE click = Confirm/Save
   - Button 3 (D2): Manual Feed -> Immediate dispense
-  - 16x2 I2C LCD with centered text
   - Real-time countdown on default screen (HH:MM:SS)
   - SG90 Servo: 105° (Tilted upward at rest) to 180° (Dispensing)
   - DS1302 RTC module for timekeeping
@@ -13,7 +16,6 @@
   - Button 1 (Hour): D5 to GND (Diagonally opposite legs)
   - Button 2 (Minute): D6 to GND (Diagonally opposite legs)
   - Button 3 (Manual Feed): D2 to GND (Diagonally opposite legs)
-  - NO 5V WIRES CONNECTED TO ANY BUTTONS!
   - LCD I2C: SDA -> A4, SCL -> A5
   - RTC: DAT -> D7, CLK -> D8, RST -> D9
   - Servo: Signal -> D4
